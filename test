@@ -1,0 +1,895 @@
+🔍 **SAS CODE ANALYSIS SUMMARY REPORT**
+======================================================================
+📁 **SOURCE FILE:** test.txt
+📅 **ANALYSIS DATE:** 2025-08-12 01:48:39
+
+📊 **CODE METRICS:**
+   • Total Lines: 3153
+   • Complexity Score: 380
+   • Function Blocks: 329
+   • Procedures: 8
+   • Macros: 24
+   • Include Files: 19
+   • System Functions: 24
+
+📝 **KEY COMPONENTS:**
+   • Datasets Created: 137
+   • Datasets Used: 66
+   • Libraries Defined: 10
+   • SQL Statements: 8
+   • Control Structures: 8
+   • CALL Routines: 3
+   • Hash Objects: 65
+   • ODS Statements: 2
+
+
+🔧 FUNCTION BLOCKS (Start → End Lines):
+ • DATA ZTRNPF: Lines 12 → 22 (11 lines)
+ • PROC SORT: Lines 24 → 26 (3 lines)
+ • PROC SORT: Lines 28 → 30 (3 lines)
+ • DATA ZTRNPF: Lines 32 → 36 (5 lines)
+ • DATA ZTRNPF: Lines 38 → 63 (26 lines)
+ • PROC SQL: Lines 68 → 75 (8 lines)
+ • PROC SORT: Lines 80 → 85 (6 lines)
+ • PROC SUMMARY: Lines 102 → 110 (9 lines)
+ • DATA PREMPF: Lines 115 → 124 (10 lines)
+ • PROC SUMMARY: Lines 126 → 134 (9 lines)
+ • DATA RPRMPF: Lines 139 → 148 (10 lines)
+ • PROC SUMMARY: Lines 150 → 158 (9 lines)
+ • DATA COMBINED: Lines 163 → 171 (9 lines)
+ • PROC SUMMARY: Lines 180 → 190 (11 lines)
+ • DATA RECON_GR: Lines 198 → 228 (31 lines)
+ • DATA TRANSV.PR_GR_PSEA: Lines 232 → 247 (16 lines)
+ • DATA ZTRNPF_RI: Lines 253 → 280 (28 lines)
+ • %MACRO PREMIUM_PSEA: Lines 4 → 281 (278 lines)
+ • PROC SQL: Lines 284 → 291 (8 lines)
+ • PROC SUMMARY: Lines 293 → 301 (9 lines)
+ • DATA RPRMPF_RI: Lines 306 → 316 (11 lines)
+ • PROC SUMMARY: Lines 320 → 328 (9 lines)
+ • PROC SUMMARY: Lines 332 → 340 (9 lines)
+ • DATA RECON_RI: Lines 343 → 361 (19 lines)
+ • DATA TRANSV.PR_RI_PSEA: Lines 365 → 377 (13 lines)
+ • PROC SORT: Lines 390 → 401 (12 lines)
+ • PROC SORT: Lines 405 → 412 (8 lines)
+ • DATA TRANSV.POLHISTORY_PSEA: Lines 415 → 500 (86 lines)
+ • PROC SORT: Lines 503 → 509 (7 lines)
+ • PROC SORT: Lines 515 → 520 (6 lines)
+ • DATA REPS_ONLY: Lines 523 → 536 (14 lines)
+ • DATA REPS: Lines 539 → 548 (10 lines)
+ • PROC SQL: Lines 555 → 568 (14 lines)
+ • DATA REPS: Lines 570 → 587 (18 lines)
+ • PROC SORT: Lines 591 → 595 (5 lines)
+ • PROC SORT: Lines 597 → 602 (6 lines)
+ • %MACRO DOLOOP: Lines 552 → 603 (52 lines)
+ • PROC SORT: Lines 608 → 612 (5 lines)
+ • DATA REPS2: Lines 615 → 627 (13 lines)
+ • PROC SQL: Lines 630 → 639 (10 lines)
+ • PROC SQL: Lines 641 → 651 (11 lines)
+ • %MACRO POLICY_PSEA: Lines 384 → 652 (269 lines)
+ • PROC SORT: Lines 663 → 677 (15 lines)
+ • PROC SORT: Lines 682 → 689 (8 lines)
+ • DATA TRANSV.POLHISTORY_PSEA: Lines 693 → 768 (76 lines)
+ • PROC SORT: Lines 771 → 777 (7 lines)
+ • %MACRO POLICY_PSEA: Lines 659 → 779 (121 lines)
+ • DATA ZTRNPF: Lines 792 → 849 (58 lines)
+ • PROC SORT: Lines 854 → 859 (6 lines)
+ • PROC SUMMARY: Lines 876 → 889 (14 lines)
+ • DATA PREMPF: Lines 894 → 906 (13 lines)
+ • PROC SUMMARY: Lines 908 → 916 (9 lines)
+ • DATA RPRMPF: Lines 921 → 933 (13 lines)
+ • PROC SUMMARY: Lines 935 → 943 (9 lines)
+ • DATA COMBINED: Lines 948 → 960 (13 lines)
+ • PROC SUMMARY: Lines 969 → 979 (11 lines)
+ • DATA RECON_GR: Lines 987 → 1036 (50 lines)
+ • DATA TRANSV.PR_GR_PSEA: Lines 1040 → 1058 (19 lines)
+ • DATA ZTRNPF_RI: Lines 1064 → 1108 (45 lines)
+ • %MACRO PREMIUM_PSEA: Lines 784 → 1110 (327 lines)
+ • PROC SUMMARY: Lines 1112 → 1120 (9 lines)
+ • DATA RPRMPF_RI: Lines 1125 → 1138 (14 lines)
+ • PROC SUMMARY: Lines 1142 → 1150 (9 lines)
+ • PROC SUMMARY: Lines 1154 → 1162 (9 lines)
+ • DATA RECON_RI: Lines 1165 → 1190 (26 lines)
+ • DATA TRANSV.PR_RI_PSEA: Lines 1194 → 1211 (18 lines)
+ • PROC SORT: Lines 1220 → 1222 (3 lines)
+ • DATA TRANSV.POLHISTORY_G400: Lines 1224 → 1227 (4 lines)
+ • PROC SORT: Lines 1236 → 1236 (1 lines)
+ • PROC SORT: Lines 1240 → 1244 (5 lines)
+ • DATA TRANSV.POL_G400: Lines 1246 → 1247 (2 lines)
+ • PROC SORT: Lines 1250 → 1250 (1 lines)
+ • DATA GCHPPF: Lines 1252 → 1261 (10 lines)
+ • DATA GCHD: Lines 1231 → 1264 (34 lines)
+ • DATA ZTRNPF: Lines 1272 → 1310 (39 lines)
+ • PROC SUMMARY: Lines 1312 → 1317 (6 lines)
+ • PROC SUMMARY: Lines 1319 → 1324 (6 lines)
+ • DATA GPMDPF: Lines 1328 → 1341 (14 lines)
+ • PROC SUMMARY: Lines 1343 → 1348 (6 lines)
+ • PROC SUMMARY: Lines 1350 → 1355 (6 lines)
+ • DATA RECON.PR_GR_G400_RECON: Lines 1359 → 1366 (8 lines)
+ • DATA GPMDPF2: Lines 1368 → 1372 (5 lines)
+ • PROC SORT: Lines 1375 → 1375 (1 lines)
+ • PROC SUMMARY: Lines 1377 → 1382 (6 lines)
+ • DATA GPMDPF2: Lines 1384 → 1396 (13 lines)
+ • PROC SORT: Lines 1400 → 1403 (4 lines)
+ • PROC SORT: Lines 1405 → 1409 (5 lines)
+ • DATA GROSS_TRAN: Lines 1411 → 1426 (16 lines)
+ • DATA TRANSV.PR_GR_G400: Lines 1430 → 1445 (16 lines)
+ • %MACRO PREMIUM_G400: Lines 1265 → 1447 (183 lines)
+ • PROC SUMMARY: Lines 1452 → 1462 (11 lines)
+ • DATA PSEA: Lines 1464 → 1470 (7 lines)
+ • DATA PSEA: Lines 1473 → 1476 (4 lines)
+ • DATA PSEA: Lines 1479 → 1516 (38 lines)
+ • DATA PILLAR1: Lines 1522 → 1553 (32 lines)
+ • PROC STDIZE: Lines 1555 → 1560 (6 lines)
+ • PROC SUMMARY: Lines 1562 → 1570 (9 lines)
+ • %MACRO PILLAR1: Lines 1449 → 1572 (124 lines)
+ • DATA CMOVPF: Lines 1588 → 1635 (48 lines)
+ • PROC SORT: Lines 1640 → 1645 (6 lines)
+ • PROC SUMMARY: Lines 1650 → 1658 (9 lines)
+ • DATA CTRNPF: Lines 1674 → 1687 (14 lines)
+ • PROC SORT: Lines 1691 → 1696 (6 lines)
+ • PROC SORT: Lines 1699 → 1704 (6 lines)
+ • PROC SQL: Lines 1707 → 1713 (7 lines)
+ • PROC SORT: Lines 1715 → 1718 (4 lines)
+ • PROC SORT: Lines 1723 → 1726 (4 lines)
+ • DATA CTRNPF: Lines 1728 → 1740 (13 lines)
+ • PROC SUMMARY: Lines 1743 → 1751 (9 lines)
+ • DATA CTRNPF: Lines 1756 → 1768 (13 lines)
+ • PROC SUMMARY: Lines 1774 → 1785 (12 lines)
+ • DATA RECON.CL_GR_PSEA_RECON: Lines 1794 → 1819 (26 lines)
+ • DATA LTRNPF: Lines 1828 → 1852 (25 lines)
+ • PROC SORT: Lines 1856 → 1859 (4 lines)
+ • DATA LTRNPF: Lines 1861 → 1876 (16 lines)
+ • PROC SUMMARY: Lines 1881 → 1889 (9 lines)
+ • DATA RECON.CL_RI_PSEA_RECON: Lines 1902 → 1930 (29 lines)
+ • DATA LTRNPF_SUM2: Lines 1937 → 1963 (27 lines)
+ • DATA CTRNPF_SUM2: Lines 1966 → 1986 (21 lines)
+ • DATA QUANTI_PSEA: Lines 1989 → 1997 (9 lines)
+ • PROC STDIZE: Lines 2000 → 2005 (6 lines)
+ • PROC SORT: Lines 2007 → 2010 (4 lines)
+ • DATA QUANTI_PSEA2: Lines 2014 → 2104 (91 lines)
+ • PROC SORT: Lines 2109 → 2112 (4 lines)
+ • DATA CL_QUANTI_PSEA: Lines 2115 → 2122 (8 lines)
+ • PROC SORT: Lines 2125 → 2128 (4 lines)
+ • DATA TRANSV.CL_QUANTI_PSEA: Lines 2130 → 2137 (8 lines)
+ • %MACRO CLAIMS_QUANTI_PSEA: Lines 1580 → 2140 (561 lines)
+ • PROC SORT: Lines 2151 → 2155 (5 lines)
+ • PROC SORT: Lines 2158 → 2162 (5 lines)
+ • PROC SORT: Lines 2169 → 2179 (11 lines)
+ • PROC SORT: Lines 2183 → 2191 (9 lines)
+ • DATA CL_QUALI_PSEA: Lines 2194 → 2244 (51 lines)
+ • DATA TRANSV.CL_QUALI_PSEA: Lines 2246 → 2261 (16 lines)
+ • %MACRO CLAIMS_QUALI_PSEA: Lines 2145 → 2263 (119 lines)
+ • DATA GCLHPF: Lines 2269 → 2290 (22 lines)
+ • PROC SORT: Lines 2292 → 2295 (4 lines)
+ • DATA GCLHPF: Lines 2297 → 2313 (17 lines)
+ • PROC SORT: Lines 2315 → 2318 (4 lines)
+ • DATA TRANSV.CL_QUALI_OCC_G400: Lines 2320 → 2323 (4 lines)
+ • PROC SORT: Lines 2328 → 2333 (6 lines)
+ • PROC SORT: Lines 2336 → 2340 (5 lines)
+ • PROC SQL: Lines 2344 → 2352 (9 lines)
+ • PROC SORT: Lines 2354 → 2356 (3 lines)
+ • PROC SORT: Lines 2357 → 2360 (4 lines)
+ • PROC SORT: Lines 2362 → 2366 (5 lines)
+ • DATA TRANSV.CL_QUALI_G400: Lines 2368 → 2372 (5 lines)
+ • PROC SORT: Lines 2373 → 2376 (4 lines)
+ • %MACRO CLAIMS_QUALI_G400: Lines 2265 → 2378 (114 lines)
+ • PROC SUMMARY: Lines 2383 → 2388 (6 lines)
+ • DATA GCREPF: Lines 2391 → 2402 (12 lines)
+ • PROC SUMMARY: Lines 2406 → 2411 (6 lines)
+ • DATA RIREPF: Lines 2415 → 2426 (12 lines)
+ • DATA RESV_G400: Lines 2430 → 2441 (12 lines)
+ • PROC SORT: Lines 2445 → 2448 (4 lines)
+ • PROC SORT: Lines 2450 → 2450 (1 lines)
+ • DATA RESV_G400: Lines 2453 → 2462 (10 lines)
+ • PROC SORT: Lines 2464 → 2467 (4 lines)
+ • DATA PAY_G400: Lines 2472 → 2491 (20 lines)
+ • PROC SORT: Lines 2493 → 2496 (4 lines)
+ • DATA QUANTI_G400: Lines 2500 → 2504 (5 lines)
+ • PROC STDIZE: Lines 2506 → 2510 (5 lines)
+ • PROC SUMMARY: Lines 2512 → 2516 (5 lines)
+ • PROC SORT: Lines 2529 → 2529 (1 lines)
+ • DATA VISIONS: Lines 2531 → 2538 (8 lines)
+ • PROC SQL: Lines 2540 → 2545 (6 lines)
+ • PROC SORT: Lines 2546 → 2546 (1 lines)
+ • DATA TRANSV.CL_QUANTI_G400: Lines 2554 → 2556 (3 lines)
+ • DATA REGDATES: Lines 2552 → 2558 (7 lines)
+ • PROC SUMMARY: Lines 2568 → 2576 (9 lines)
+ • DATA PREMIUM: Lines 2579 → 2615 (37 lines)
+ • PROC SUMMARY: Lines 2618 → 2626 (9 lines)
+ • PROC SORT: Lines 2631 → 2635 (5 lines)
+ • PROC SORT: Lines 2638 → 2642 (5 lines)
+ • DATA COMBINE: Lines 2646 → 2651 (6 lines)
+ • PROC SORT: Lines 2653 → 2656 (4 lines)
+ • DATA BASE_PSEA: Lines 2660 → 2686 (27 lines)
+ • DATA BASE_PSEA: Lines 2689 → 2695 (7 lines)
+ • PROC SORT: Lines 2697 → 2700 (4 lines)
+ • DATA TRANSV.P2: Lines 2705 → 2899 (195 lines)
+ • %MACRO PILLAR2: Lines 2560 → 2901 (342 lines)
+ • DATA QUALI: Lines 2906 → 2908 (3 lines)
+ • DATA _NULL_: Lines 2916 → 2919 (4 lines)
+ • DATA _NULL_: Lines 2922 → 2924 (3 lines)
+ • DATA PIF: Lines 2928 → 2931 (4 lines)
+ • DATA _NULL_: Lines 2937 → 2939 (3 lines)
+ • DATA PIF: Lines 2943 → 2954 (12 lines)
+ • DATA TRANSV.P2_PIF: Lines 2960 → 2983 (24 lines)
+ • PROC DELETE: Lines 2985 → 2987 (3 lines)
+ • %MACRO PILLAR2_PIF: Lines 2903 → 2989 (87 lines)
+ • PROC SUMMARY: Lines 3008 → 3014 (7 lines)
+ • PROC SORT: Lines 3022 → 3026 (5 lines)
+ • DATA PREM2: Lines 3028 → 3034 (7 lines)
+ • PROC SUMMARY: Lines 3036 → 3041 (6 lines)
+ • DATA PREM3: Lines 3050 → 3058 (9 lines)
+ • DATA LISTDATES: Lines 3067 → 3073 (7 lines)
+ • PROC SORT: Lines 3074 → 3077 (4 lines)
+ • DATA NBPERIOD: Lines 3087 → 3092 (6 lines)
+ • DATA LISTDATES2: Lines 3093 → 3097 (5 lines)
+ • PROC SQL: Lines 3107 → 3113 (7 lines)
+ • PROC SORT: Lines 3115 → 3117 (3 lines)
+ • DATA PREM5: Lines 3126 → 3151 (26 lines)
+ • PROC SUMMARY: Lines 3152 → 3156 (5 lines)
+ • PROC SORT: Lines 3169 → 3173 (5 lines)
+ • PROC SORT: Lines 3174 → 3177 (4 lines)
+ • DATA POLHIST_RISK: Lines 3179 → 3186 (8 lines)
+ • PROC SORT: Lines 3188 → 3191 (4 lines)
+ • DATA PREM6 ERROR: Lines 3197 → 3221 (25 lines)
+ • PROC SQL: Lines 3231 → 3236 (6 lines)
+ • PROC SORT: Lines 3238 → 3241 (4 lines)
+ • PROC SORT: Lines 3243 → 3247 (5 lines)
+ • DATA TRANSV.P3_PSEA: Lines 3255 → 3255 (1 lines)
+ • PROC SORT: Lines 3256 → 3256 (1 lines)
+ • DATA GEP201606_NEW: Lines 3266 → 3271 (6 lines)
+ • PROC SUMMARY: Lines 3272 → 3277 (6 lines)
+ • DATA GEP201606_OLD: Lines 3279 → 3287 (9 lines)
+ • PROC SUMMARY: Lines 3288 → 3293 (6 lines)
+ • DATA ERRORS: Lines 3295 → 3299 (5 lines)
+ • %MACRO PILLAR3_PSEA: Lines 2990 → 3302 (313 lines)
+ • DATA _NULL_: Lines 3306 → 3306 (1 lines)
+ • DATA _NULL_: Lines 3312 → 3312 (1 lines)
+ • DATA _NULL_: Lines 3320 → 3323 (4 lines)
+ • DATA PSEA: Lines 3328 → 3337 (10 lines)
+ • PROC SUMMARY: Lines 3338 → 3342 (5 lines)
+ • DATA TRANSV.P3_PSEA_MONTHLY: Lines 3348 → 3348 (1 lines)
+ • PROC DELETE: Lines 3349 → 3350 (2 lines)
+ • PROC IMPORT: Lines 3358 → 3359 (2 lines)
+ • PROC SUMMARY: Lines 3361 → 3366 (6 lines)
+ • PROC SUMMARY: Lines 3368 → 3373 (6 lines)
+ • PROC SQL: Lines 3375 → 3380 (6 lines)
+ • DATA TRANSV.P3_PSEA_MONTHLY: Lines 3382 → 3392 (11 lines)
+ • %MACRO PILLAR3_PSEA_MONTHLY: Lines 3303 → 3394 (92 lines)
+ • PROC SORT: Lines 3398 → 3402 (5 lines)
+ • PROC SORT: Lines 3405 → 3409 (5 lines)
+ • PROC SQL: Lines 3411 → 3417 (7 lines)
+ • PROC SORT: Lines 3418 → 3421 (4 lines)
+ • PROC SUMMARY: Lines 3423 → 3428 (6 lines)
+ • DATA CLAIM: Lines 3430 → 3434 (5 lines)
+ • DATA _NULL_: Lines 3442 → 3442 (1 lines)
+ • DATA _NULL_: Lines 3448 → 3452 (5 lines)
+ • PROC SUMMARY: Lines 3461 → 3466 (6 lines)
+ • DATA PREMIUM: Lines 3467 → 3467 (1 lines)
+ • DATA TEMPCL: Lines 3470 → 3481 (12 lines)
+ • DATA TEMPCL: Lines 3482 → 3507 (26 lines)
+ • PROC SUMMARY: Lines 3508 → 3512 (5 lines)
+ • DATA P3_12RM: Lines 3519 → 3521 (3 lines)
+ • PROC STDIZE: Lines 3523 → 3526 (4 lines)
+ • PROC SUMMARY: Lines 3528 → 3532 (5 lines)
+ • PROC DELETE: Lines 3534 → 3534 (1 lines)
+ • DATA TRANSV.P3_PSEA_12RM: Lines 3537 → 3560 (24 lines)
+ • %MACRO PILLAR3_PSEA_12RM: Lines 3395 → 3563 (169 lines)
+ • PROC SORT: Lines 3570 → 3574 (5 lines)
+ • %MACRO RISK_DATES_MEMBERS: Lines 3568 → 3595 (28 lines)
+ • %MACRO RISK_G400: Lines 3565 → 3597 (33 lines)
+ • PROC SUMMARY: Lines 3603 → 3608 (6 lines)
+ • PROC SUMMARY: Lines 3610 → 3615 (6 lines)
+ • DATA GXHIPF2: Lines 3617 → 3651 (35 lines)
+ • PROC SQL: Lines 3654 → 3661 (8 lines)
+ • PROC SORT: Lines 2551 → 3663 (1113 lines)
+ • DATA MAPPINGS.SYS_: Lines 3684 → 3700 (17 lines)
+ • PROC SORT: Lines 3702 → 3705 (4 lines)
+ • %MACRO DESCPF_MAP: Lines 3682 → 3706 (25 lines)
+ • DATA MAPPINGS.SYS_: Lines 3709 → 3722 (14 lines)
+ • PROC SORT: Lines 3724 → 3727 (4 lines)
+ • %MACRO ITEMPF_MAP: Lines 3708 → 3728 (21 lines)
+ • PROC IMPORT: Lines 3732 → 3737 (6 lines)
+ • DATA MAPPINGS.ACT_: Lines 3744 → 3748 (5 lines)
+ • DATA MAPPINGS.ACT_: Lines 3752 → 3756 (5 lines)
+ • PROC FREQ: Lines 3762 → 3765 (4 lines)
+ • DATA _NULL_: Lines 3768 → 3775 (8 lines)
+ • PROC SQL: Lines 3780 → 3785 (6 lines)
+ • DATA MAPPINGS.ACT_: Lines 3787 → 3789 (3 lines)
+ • %MACRO EXCEL_MAIN: Lines 3731 → 3791 (61 lines)
+ • PROC IMPORT: Lines 3798 → 3803 (6 lines)
+ • PROC IMPORT: Lines 3886 → 3896 (11 lines)
+ • DATA EXTRACT.ZTRNPF: Lines 3905 → 3910 (6 lines)
+ • DATA EXTRACT.PREMPF: Lines 3914 → 3917 (4 lines)
+ • DATA EXTRACT.RTRNPF: Lines 3920 → 3922 (3 lines)
+ • DATA EXTRACT.RPRMPF_CO: Lines 3926 → 3930 (5 lines)
+ • DATA EXTRACT.RPRMPF_RP: Lines 3935 → 3939 (5 lines)
+ • %MACRO PREMIUM: Lines 3903 → 3941 (39 lines)
+ • DATA EXTRACT.CHDRPF: Lines 3951 → 3959 (9 lines)
+ • DATA EXTRACT.CHEXPF: Lines 3962 → 3964 (3 lines)
+ • DATA EXTRACT.RPMTPF: Lines 3967 → 3969 (3 lines)
+ • DATA EXTRACT.SMCPPF: Lines 3972 → 3974 (3 lines)
+ • DATA EXTRACT.NDRVPF: Lines 3977 → 3981 (5 lines)
+ • DATA EXTRACT.RISKPF: Lines 3984 → 3987 (4 lines)
+ • DATA EXTRACT.PPIAPF: Lines 3990 → 3992 (3 lines)
+ • DATA EXTRACT.SPIAPF: Lines 3995 → 3997 (3 lines)
+ • %MACRO POLICY_RISK: Lines 3946 → 4000 (55 lines)
+ • DATA EXTRACT.CMOVPF: Lines 4005 → 4010 (6 lines)
+ • DATA EXTRACT.CTRNPF: Lines 4013 → 4016 (4 lines)
+ • DATA EXTRACT.LTRNPF: Lines 4019 → 4023 (5 lines)
+ • DATA EXTRACT.CLAMPF: Lines 4026 → 4032 (7 lines)
+ • DATA EXTRACT.CLXDPF: Lines 4035 → 4039 (5 lines)
+ • DATA EXTRACT.CPMTPF: Lines 4042 → 4044 (3 lines)
+ • DATA EXTRACT.CMXTPF: Lines 4046 → 4048 (3 lines)
+ • DATA EXTRACT.CPATPF: Lines 4051 → 4053 (3 lines)
+ • DATA EXTRACT.CFIRPF: Lines 4055 → 4057 (3 lines)
+ • DATA EXTRACT.CPIAPF: Lines 4059 → 4061 (3 lines)
+ • DATA EXTRACT.CWSCPF: Lines 4063 → 4065 (3 lines)
+ • DATA EXTRACT.CCGOPF: Lines 4068 → 4070 (3 lines)
+ • DATA EXTRACT.CHULPF: Lines 4072 → 4074 (3 lines)
+ • DATA EXTRACT.TPDTPF: Lines 4077 → 4079 (3 lines)
+ • DATA EXTRACT.CKFKPF: Lines 4082 → 4084 (3 lines)
+ • DATA EXTRACT.CLRCPF: Lines 4087 → 4089 (3 lines)
+ • DATA EXTRACT.CLRIPF: Lines 4092 → 4094 (3 lines)
+ • %MACRO CLAIMS: Lines 4003 → 4096 (94 lines)
+ • DATA EXTRACT.CLNTPF: Lines 4101 → 4107 (7 lines)
+ • DATA EXTRACT.CLEXPF: Lines 4110 → 4112 (3 lines)
+ • DATA EXTRACT.AGNTPF: Lines 4115 → 4117 (3 lines)
+ • DATA EXTRACT.ZYAMPF: Lines 4119 → 4121 (3 lines)
+ • DATA EXTRACT.DESCPF: Lines 4124 → 4126 (3 lines)
+ • DATA EXTRACT.ITEMPF: Lines 4129 → 4131 (3 lines)
+ • DATA EXTRACT.CHEQPF: Lines 4134 → 4136 (3 lines)
+ • DATA EXTRACT.DTAHPF: Lines 4139 → 4141 (3 lines)
+ • DATA EXTRACT.FLDDPF: Lines 4144 → 4146 (3 lines)
+ • %MACRO MAPPINGS: Lines 4099 → 4147 (49 lines)
+ • PROC IMPORT: Lines 4202 → 4207 (6 lines)
+ • DATA _NULL_: Lines 4255 → 4310 (56 lines)
+ • PROC FCMP: Lines 4320 → 4340 (21 lines)
+ • PROC FCMP: Lines 4342 → 4352 (11 lines)
+ • PROC FCMP: Lines 4354 → 4361 (8 lines)
+ • PROC SORT: Lines 2550 → 4435 (1886 lines)
+ • PROC SORT: Lines 2528 → 4435 (1908 lines)
+ • DATA VISIONS: Lines 2522 → 4435 (1914 lines)
+ • PROC SORT: Lines 2521 → 4435 (1915 lines)
+ • %MACRO CLAIMS_QUANTI_G400: Lines 2379 → 4435 (2057 lines)
+ • %MACRO POLICY_G400: Lines 1217 → 4435 (3219 lines)
+
+## Include Files (19)
+Name                                                                       Count  Line Numbers
+-------------------------------------------------------------------------  -  ------------------------------------------------------------
+&SASCODE.\01 TRANSVERSAL\1 INIT.SAS                                        1  4386
+&SASCODE.\01 TRANSVERSAL\2 SYSTEM EXTRACTIONS.SAS                          1  4397
+&SASCODE.\01 TRANSVERSAL\3 MAPPINGS.SAS                                    1  4400
+&SASCODE.\01 TRANSVERSAL\4_01 TRANSVERSAL TABLES POLICY.SAS                1  4403
+&SASCODE.\01 TRANSVERSAL\4_02 TRANSVERSAL TABLES PREMIUM.SAS               1  4406
+&SASCODE.\01 TRANSVERSAL\4_03_1 TRANSVERSAL TABLES CLAIMS QUANT.SAS        1  4409
+&SASCODE.\01 TRANSVERSAL\4_03_2 TRANSVERSAL TABLES CLAIMS QUAL.SAS         1  4410
+&SASCODE.\01 TRANSVERSAL\4_04 TRANSVERSAL TABLES PILLAR 1.SAS              1  4414
+&SASCODE.\01 TRANSVERSAL\4_05_1 TRANSVERSAL TABLES PILLAR 2.SAS            1  4417
+&SASCODE.\01 TRANSVERSAL\4_05_2 TRANSVERSAL TABLES PILLAR 2 SUMMARIES.SAS  1  4418
+&SASCODE.\01 TRANSVERSAL\4_06 TRANSVERSAL TABLES PILLAR 3.SAS              1  4422
+&SASCODE.\01 TRANSVERSAL\4_06_1 TRANSVERSAL TABLES PILLAR 3 LOOP.SAS       1  4423
+&SASCODE.\01 TRANSVERSAL\4_06_2 TRANSVERSAL TABLES PILLAR 3 12 RM.SAS      1  4424
+&SASCODE.\01 TRANSVERSAL\4_07 TRANSVERSAL CLIENT.SAS                       1  4428
+&SASCODE.\01 TRANSVERSAL\4_08 TRANSVERSAL AGENT.SAS                        1  4431
+&SASCODE.\01 TRANSVERSAL\5 REPLACE CURRENT VISION ON SERVER.SAS            1  4435
+&SASCODE.\02 SUB\01_HELPER_FUNCTIONS\ARRAY.SAS                             1  4313
+&SASCODE.\02 SUB\01_HELPER_FUNCTIONS\DO_OVER.SAS                           1  4315
+&SASCODE.\02 SUB\01_HELPER_FUNCTIONS\NUMLIST.SAS                           1  4317
+
+## System Functions (24)
+Name       Count  Line Numbers
+---------  --  ------------------------------------------------------------
+ABS        19  213, 214, 215, 216, 354, 355, 1004, 1005, 1006, 1007, 1180, ...
+MISSING    16  1438, 2252, 2256, 2977, 3205, 3210, 3386, 3486, 3544, 3548, ...
+COMPRESS   14  459, 460, 461, 729, 730, 731, 1253, 1254, 1624, 1682, 4334, ...
+YEAR       14  2284, 2439, 2941, 3307, 3308, 3324, 3326, 3413, 3454, 3455, ...
+MONTH      14  2284, 2439, 2458, 2524, 2941, 3307, 3308, 3326, 3413, 3454, ...
+MDY        13  2781, 2914, 2917, 3262, 3263, 3264, 3305, 3306, 3324, 3437, ...
+MAX        13  3268, 3269, 3270, 3286, 3330, 3331, 3332, 3333, 3584, 3585, ...
+ROUND      11  242, 243, 374, 1050, 1051, 1052, 1053, 1205, 1206, 1393, 360...
+SUBSTR     11  746, 754, 1254, 1290, 2477, 2478, 3719, 4334, 4335, 4336, 43...
+MIN        11  2310, 3268, 3269, 3270, 3286, 3330, 3331, 3332, 3333, 3614, ...
+FIND       10  1443, 2259, 2980, 3213, 3389, 3489, 3555, 3640, 3646, 3647
+INTNX      10  2781, 2917, 2918, 2938, 3306, 3321, 3322, 3449, 3450, 3451
+DAY         5  4217, 4269, 4270, 4273, 4358
+LENGTH      4  745, 753, 1253, 4346
+COALESCEC   3  1624, 2238, 2239
+INTCK       3  2923, 3312, 3442
+COALESCE    3  3377, 3390, 4334
+TODAY       3  4215, 4216, 4217
+DATEPART    2  2281, 2476
+CATS        2  3746, 3754
+INT         1  1456
+TRIM        1  2226
+LOWCASE     1  2226
+TIME        1  4218
+
+## CALL Routines (3)
+Name          Count  Line Numbers
+------------  --  ------------------------------------------------------------
+CALL_MISSING  14  1438, 2252, 2256, 2977, 3205, 3210, 3386, 3486, 3544, 3548, ...
+CALL_SYMPUT   14  2917, 2918, 2923, 2938, 3306, 3312, 3321, 3322, 3442, 3449, ...
+CALL_SYMPUTX   8  4274, 4276, 4303, 4304, 4305, 4307, 4308, 4309
+
+## Hash Objects (65)
+Name                        Count  Line Numbers
+--------------------------  -  ------------------------------------------------------------
+HASH_DECLARE_HASH_CANCMAP   1  3206
+HASH_DECLARE_HASH_DATEMAP   1  3201
+HASH_DECLARE_HASH_DCMAP     1  3550
+HASH_DECLARE_HASH_H1        2  2971, 3623
+HASH_DECLARE_HASH_H2        1  3628
+HASH_DECLARE_HASH_H3        1  3633
+HASH_DECLARE_HASH_LOBMAP    1  3546
+HASH_DECLARE_HASH_MAPLC     1  3485
+HASH_DECLARE_HASH_MAPNC     1  2254
+HASH_DECLARE_HASH_MAPSTAT   1  2250
+HASH_DECLARE_HASH_POLMAP    1  3542
+HASH_DECLARE_HASH_POLQUALI  1  1437
+HASH_DECLARE_HASH_PRODALL   1  3385
+HASH_DEFINEDATA_CANCMAP     1  3208
+HASH_DEFINEDATA_DATEMAP     1  3203
+HASH_DEFINEDATA_DCMAP       1  3551
+HASH_DEFINEDATA_H1          2  2974, 3625
+HASH_DEFINEDATA_H2          1  3630
+HASH_DEFINEDATA_H3          1  3635
+HASH_DEFINEDATA_LOBMAP      1  3547
+HASH_DEFINEDATA_MAPLC       1  3485
+HASH_DEFINEDATA_MAPNC       1  2256
+HASH_DEFINEDATA_MAPSTAT     1  2252
+HASH_DEFINEDATA_POLMAP      1  3543
+HASH_DEFINEDATA_POLQUALI    1  1437
+HASH_DEFINEDATA_PRODALL     1  3386
+HASH_DEFINEDONE_CANCMAP     1  3209
+HASH_DEFINEDONE_DATEMAP     1  3204
+HASH_DEFINEDONE_DCMAP       1  3552
+HASH_DEFINEDONE_H1          2  2975, 3626
+HASH_DEFINEDONE_H2          1  3631
+HASH_DEFINEDONE_H3          1  3636
+HASH_DEFINEDONE_LOBMAP      1  3548
+HASH_DEFINEDONE_MAPLC       1  3486
+HASH_DEFINEDONE_MAPNC       1  2256
+HASH_DEFINEDONE_MAPSTAT     1  2252
+HASH_DEFINEDONE_POLMAP      1  3544
+HASH_DEFINEDONE_POLQUALI    1  1438
+HASH_DEFINEDONE_PRODALL     1  3386
+HASH_DEFINEKEY_CANCMAP      1  3207
+HASH_DEFINEKEY_DATEMAP      1  3202
+HASH_DEFINEKEY_DCMAP        1  3550
+HASH_DEFINEKEY_H1           2  2973, 3624
+HASH_DEFINEKEY_H2           1  3629
+HASH_DEFINEKEY_H3           1  3634
+HASH_DEFINEKEY_LOBMAP       1  3546
+HASH_DEFINEKEY_MAPLC        1  3485
+HASH_DEFINEKEY_MAPNC        1  2255
+HASH_DEFINEKEY_MAPSTAT      1  2251
+HASH_DEFINEKEY_POLMAP       1  3542
+HASH_DEFINEKEY_POLQUALI     1  1437
+HASH_DEFINEKEY_PRODALL      1  3385
+HASH_FIND_CANCMAP           1  3213
+HASH_FIND_DATEMAP           2  3213, 3218
+HASH_FIND_DCMAP             1  3555
+HASH_FIND_H1                2  2980, 3640
+HASH_FIND_H2                1  3646
+HASH_FIND_H3                1  3647
+HASH_FIND_LOBMAP            1  3555
+HASH_FIND_MAPLC             1  3489
+HASH_FIND_MAPNC             1  2259
+HASH_FIND_MAPSTAT           1  2259
+HASH_FIND_POLMAP            1  3555
+HASH_FIND_POLQUALI          1  1443
+HASH_FIND_PRODALL           1  3389
+
+## ODS Statements (2)
+Name        Count  Line Numbers
+----------  -  ------------------------------------------------------------
+ODS_OUTPUT  1  3760
+ODS_SELECT  2  3759, 3779
+
+## Datasets Created (137)
+Name                      Count  Line Numbers
+------------------------  --  ------------------------------------------------------------
+_NULL_                    10  2916, 2922, 2937, 3306, 3312, 3320, 3442, 3448, 3768, 4255
+OF                         6  97, 97, 98, 871, 871, 872
+ZTRNPF                     5  12, 32, 38, 792, 1272
+ONE                        4  97, 97, 871, 871
+LEVEL                      4  97, 98, 871, 872
+THAT                       4  231, 364, 1039, 1193
+DID                        4  231, 364, 1039, 1193
+NOT                        4  231, 364, 1039, 1193
+MATCH                      4  231, 364, 1039, 1193
+PSEA                       4  1464, 1473, 1479, 3328
+COMBINE                    3  98, 872, 2646
+CTRNPF                     3  1674, 1728, 1756
+MAPPINGS.ACT_              3  3744, 3752, 3787
+WHEN                       2  97, 871
+THE                        2  97, 871
+CLASS                      2  97, 871
+VARIABLES                  2  97, 871
+IS                         2  97, 871
+MISSING                    2  97, 871
+AS                         2  98, 872
+A                          2  98, 872
+SEPERATE                   2  98, 872
+AND                        2  98, 872
+WILL                       2  98, 872
+ALL                        2  98, 872
+PREMPF                     2  115, 894
+RPRMPF                     2  139, 921
+COMBINED                   2  163, 948
+RECON_GR                   2  198, 987
+TRANSV.PR_GR_PSEA          2  232, 1040
+ZTRNPF_RI                  2  253, 1064
+RPRMPF_RI                  2  306, 1125
+RECON_RI                   2  343, 1165
+TRANSV.PR_RI_PSEA          2  365, 1194
+TRANSV.POLHISTORY_PSEA     2  415, 693
+REPS                       2  539, 570
+GPMDPF2                    2  1368, 1384
+LTRNPF                     2  1828, 1861
+GCLHPF                     2  2269, 2297
+RESV_G400                  2  2430, 2453
+VISIONS                    2  2522, 2531
+PREMIUM                    2  2579, 3467
+BASE_PSEA                  2  2660, 2689
+PIF                        2  2928, 2943
+TRANSV.P3_PSEA_MONTHLY     2  3348, 3382
+TEMPCL                     2  3470, 3482
+MAPPINGS.SYS_              2  3684, 3709
+STEP.                      1  473
+REPS_ONLY                  1  523
+REPS2                      1  615
+TRANSV.POLHISTORY_G400     1  1224
+GCHD                       1  1231
+TRANSV.POL_G400            1  1246
+GCHPPF                     1  1252
+GPMDPF                     1  1328
+RECON.PR_GR_G400_RECON     1  1359
+GROSS_TRAN                 1  1411
+TRANSV.PR_GR_G400          1  1430
+PILLAR1                    1  1522
+CMOVPF                     1  1588
+RECON.CL_GR_PSEA_RECON     1  1794
+RECON.CL_RI_PSEA_RECON     1  1902
+LTRNPF_SUM2                1  1937
+CTRNPF_SUM2                1  1966
+QUANTI_PSEA                1  1989
+QUANTI_PSEA2               1  2014
+CL_QUANTI_PSEA             1  2115
+TRANSV.CL_QUANTI_PSEA      1  2130
+CL_QUALI_PSEA              1  2194
+TRANSV.CL_QUALI_PSEA       1  2246
+TRANSV.CL_QUALI_OCC_G400   1  2320
+TRANSV.CL_QUALI_G400       1  2368
+GCREPF                     1  2391
+RIREPF                     1  2415
+PAY_G400                   1  2472
+QUANTI_G400                1  2500
+REGDATES                   1  2552
+TRANSV.CL_QUANTI_G400      1  2554
+TRANSV.P2                  1  2705
+QUALI                      1  2906
+TRANSV.P2_PIF              1  2960
+PREM2                      1  3028
+PREM3                      1  3050
+LISTDATES                  1  3067
+NBPERIOD                   1  3087
+LISTDATES2                 1  3093
+PREM5                      1  3126
+POLHIST_RISK               1  3179
+PREM6                      1  3197
+ERROR                      1  3197
+TRANSV.P3_PSEA             1  3255
+GEP201606_NEW              1  3266
+GEP201606_OLD              1  3279
+ERRORS                     1  3295
+CLAIM                      1  3430
+P3_12RM                    1  3519
+TRANSV.P3_PSEA_12RM        1  3537
+GXHIPF2                    1  3617
+EXTRACT.ZTRNPF             1  3905
+EXTRACT.PREMPF             1  3914
+EXTRACT.RTRNPF             1  3920
+EXTRACT.RPRMPF_CO          1  3926
+EXTRACT.RPRMPF_RP          1  3935
+EXTRACT.CHDRPF             1  3951
+EXTRACT.CHEXPF             1  3962
+EXTRACT.RPMTPF             1  3967
+EXTRACT.SMCPPF             1  3972
+EXTRACT.NDRVPF             1  3977
+EXTRACT.RISKPF             1  3984
+EXTRACT.PPIAPF             1  3990
+EXTRACT.SPIAPF             1  3995
+EXTRACT.CMOVPF             1  4005
+EXTRACT.CTRNPF             1  4013
+EXTRACT.LTRNPF             1  4019
+EXTRACT.CLAMPF             1  4026
+EXTRACT.CLXDPF             1  4035
+EXTRACT.CPMTPF             1  4042
+EXTRACT.CMXTPF             1  4046
+EXTRACT.CPATPF             1  4051
+EXTRACT.CFIRPF             1  4055
+EXTRACT.CPIAPF             1  4059
+EXTRACT.CWSCPF             1  4063
+EXTRACT.CCGOPF             1  4068
+EXTRACT.CHULPF             1  4072
+EXTRACT.TPDTPF             1  4077
+EXTRACT.CKFKPF             1  4082
+EXTRACT.CLRCPF             1  4087
+EXTRACT.CLRIPF             1  4092
+EXTRACT.CLNTPF             1  4101
+EXTRACT.CLEXPF             1  4110
+EXTRACT.AGNTPF             1  4115
+EXTRACT.ZYAMPF             1  4119
+EXTRACT.DESCPF             1  4124
+EXTRACT.ITEMPF             1  4129
+EXTRACT.CHEQPF             1  4134
+EXTRACT.DTAHPF             1  4139
+EXTRACT.FLDDPF             1  4144
+
+## Datasets Used (66)
+Name                        Count  Line Numbers
+--------------------------  -  ------------------------------------------------------------
+MERGE_BASE                  6  233, 366, 1041, 1195, 1729, 2116
+MERGE_ZTRNPF                2  201, 990
+MERGE_ZTRNPF_RI             2  346, 1168
+SET_CHDRPF2                 2  417, 695
+SET_REPS                    2  571, 616
+SET_PSEA                    2  1474, 1480
+SET_ZTRNPF                  1  39
+SET_SERVUNIT                1  387
+SET_REPS_ONLY               1  527
+UPDATE_EACH                 1  550
+SET_GCHIPF                  1  1224
+SET_GCHPPF                  1  1252
+MERGE_GPMDPF2               1  1369
+SET_GROSS_TRAN              1  1441
+MERGE_OF                    1  1587
+MERGE_THIS                  1  1880
+SET_LTRNPF_SUM              1  1938
+SET_CTRNPF_SUM              1  1967
+MERGE_CTRNPF                1  1990
+SET_QUANTI_PSEA             1  2015
+SET_CL_QUALI_PSEA           1  2258
+SET_GCLHPF                  1  2298
+SET_GCREPF                  1  2392
+SET_RIREPF                  1  2416
+SET_VISIONS                 1  2531
+MERGE_IT                    1  2548
+SET_REGDATES                1  2552
+SET_PREMIUM                 1  2581
+MERGE_PREMIUM               1  2647
+SET_COMBINE                 1  2661
+MERGE_BASE_PSEA             1  2690
+SET_BASE_PSEA               1  2706
+SET_PREM2                   1  3051
+SET_PREM4                   1  3127
+SET_PREM5                   1  3212
+SET_PREM6                   1  3255
+SET_TRANSV.P3_PSEA_MONTHLY  1  3388
+SET_TEMPPR                  1  3467
+SET_TEMPCL                  1  3488
+SET_P3_PSEA_12RM            1  3554
+SET_TEMP                    1  3577
+SET_GXHIPF                  1  3639
+SET_AS400B.CHEXPF           1  3963
+SET_AS400B.RPMTPF           1  3968
+SET_AS400B.PPIAPF           1  3991
+SET_AS400B.SPIAPF           1  3996
+SET_AS400C.CPMTTH           1  4043
+SET_AS400B.CMXTPF           1  4047
+SET_AS400B.CPATPF           1  4052
+SET_AS400B.CFIRPF           1  4056
+SET_AS400B.CPIAPF           1  4060
+SET_AS400B.CWSCPF           1  4064
+SET_AS400C.CCGOTH           1  4069
+SET_AS400B.CHULPF           1  4073
+SET_AS400A.TPDTTH           1  4078
+SET_AS400B.CKFKPF           1  4083
+SET_AS400B.CLRCPF           1  4088
+SET_AS400B.CLRIPF           1  4093
+SET_AS400B.CLEXPF           1  4111
+SET_AS400B.AGNTPF           1  4116
+SET_AS400B.ZYAMPF           1  4120
+SET_AS400B.DESCPF           1  4125
+SET_AS400B.ITEMPF           1  4130
+SET_AS400B.CHEQPF           1  4135
+SET_AS400B.DTAHPF           1  4140
+SET_AS400B.FLDDPF           1  4145
+
+## Procedures (8)
+Name     Count  Line Numbers
+-------  --  ------------------------------------------------------------
+DELETE    3  2985 (data=UNKNOWN), 3349 (data=UNKNOWN), 3534 (data=UNKNOWN...
+FCMP      3  4320 (data=UNKNOWN), 4342 (data=UNKNOWN), 4354 (data=UNKNOWN...
+FREQ      1  3762 (data=UNKNOWN)
+IMPORT    5  3358 (data=UNKNOWN), 3732 (data=UNKNOWN), 3798 (data=UNKNOWN...
+SORT     71  24 (data=ZTRNPF), 28 (data=MAPPINGS.ACT_ZTRN_ADJ), 80 (data=...
+SQL      14  68 (data=UNKNOWN), 284 (data=UNKNOWN), 555 (data=UNKNOWN), 6...
+STDIZE    4  1555 (data=UNKNOWN), 2000 (data=UNKNOWN), 2506 (data=UNKNOWN...
+SUMMARY  44  102 (data=UNKNOWN), 126 (data=UNKNOWN), 150 (data=UNKNOWN), ...
+
+## Macro Definitions (24)
+Name                                              Count  Line Numbers
+------------------------------------------------  -  ------------------------------------------------------------
+%CLAIMS(MONTHEND)                                 1  4003
+%CLAIMS_QUALI_G400                                1  2265
+%CLAIMS_QUALI_PSEA                                1  2145
+%CLAIMS_QUANTI_G400                               1  2379
+%CLAIMS_QUANTI_PSEA                               1  1580
+%DESCPF_MAP(TABLE, NAME, ID)                      1  3682
+%DOLOOP                                           1  552
+%EXCEL_MAIN(INPUT_FILE, SHEET, SASNAME)           1  3731
+%ITEMPF_MAP(TABLE, KEY, FIELD, START, LENGTH)     1  3708
+%MAPPINGS(MONTHEND)                               1  4099
+%PILLAR1                                          1  1449
+%PILLAR2                                          1  2560
+%PILLAR2_PIF                                      1  2903
+%PILLAR3_PSEA                                     1  2990
+%PILLAR3_PSEA_12RM                                1  3395
+%PILLAR3_PSEA_MONTHLY                             1  3303
+%POLICY_G400                                      1  1217
+%POLICY_PSEA                                      1  659
+%POLICY_RISK(MONTHEND)                            1  3946
+%PREMIUM(MONTHEND)                                1  3903
+%PREMIUM_G400                                     1  1265
+%PREMIUM_PSEA(MONTHEND)                           1  784
+%RISK_DATES_MEMBERS(INP_TABLE,OUT_TABLE,MEASURE)  1  3568
+%RISK_G400                                        1  3565
+
+## Macro Calls (23)
+Name                 Count  Line Numbers
+-------------------  --  ------------------------------------------------------------
+%DESCPF_MAP          33  3812, 3814, 3815, 3816, 3817, 3818, 3819, 3820, 3821, 3822, ...
+%SYSFUNC             30  2914, 2941, 2941, 3305, 3307, 3307, 3308, 3308, 3324, 3324, ...
+%EXCEL_MAIN          24  3849, 3850, 3853, 3854, 3855, 3856, 3857, 3858, 3860, 3863, ...
+%TO                   4  553, 2935, 3318, 3446
+%PUT                  3  2926, 3314, 3458
+%PILLAR3_PSEA_12RM    2  3679, 4426
+%DOLOOP               1  605
+%RISK_DATES_MEMBERS   1  3599
+%PREMIUM              1  4174
+%POLICY_RISK          1  4175
+%CLAIMS               1  4176
+%MAPPINGS             1  4177
+%SYSEXEC              1  4365
+%POLICY_PSEA          1  4404
+%PREMIUM_PSEA         1  4407
+%CLAIMS_QUANTI_PSEA   1  4411
+%CLAIMS_QUALI_PSEA    1  4412
+%PILLAR1              1  4415
+%PILLAR2              1  4419
+%PILLAR2_SUMMARIES    1  4420
+%LOOP_YRM             1  4425
+%CUSTOMERS            1  4429
+%AGENTS               1  4432
+
+## SQL Operations (8)
+Name    Count  Line Numbers
+------  ---  ------------------------------------------------------------
+DROP    123  61, 83, 108, 123, 132, 147, 156, 188, 199, 246, 278, 299, 31...
+WHERE    39  17, 82, 257, 395, 517, 668, 797, 856, 1069, 1275, 1331, 1360...
+FROM     22  72, 288, 388, 562, 636, 648, 662, 1618, 1711, 2347, 2543, 31...
+SELECT   21  70, 286, 557, 632, 643, 830, 1090, 1282, 1528, 1709, 2346, 2...
+JOIN     16  73, 289, 563, 637, 649, 1616, 1623, 1712, 2348, 2350, 2543, ...
+CREATE   14  69, 285, 556, 631, 642, 698, 1708, 2345, 2541, 3108, 3232, 3...
+DELETE    9  2950, 2985, 3349, 3534, 3587, 3592, 3642, 3747, 3755
+UPDATE    1  550
+
+## Control Structures (8)
+Name     Count  Line Numbers
+-------  ---  ------------------------------------------------------------
+IF_THEN  152  47, 170, 207, 222, 223, 224, 225, 240, 251, 352, 357, 358, 3...
+FORMAT    41  53, 270, 416, 420, 426, 524, 541, 617, 698, 699, 793, 822, 1...
+LABEL     31  21, 119, 143, 261, 311, 439, 709, 801, 899, 926, 1073, 1131,...
+RETAIN    17  470, 471, 620, 1484, 1941, 1970, 2017, 2300, 2394, 2418, 253...
+LENGTH    15  13, 452, 722, 1431, 2247, 2321, 2961, 3198, 3383, 3483, 3538...
+OUTPUT    11  226, 359, 1033, 1188, 3133, 3136, 3142, 3145, 3146, 3648, 41...
+DO_LOOP    9  47, 48, 173, 553, 962, 2935, 3214, 3318, 3446
+DELETE     6  2950, 3587, 3592, 3642, 3747, 3755
+
+## Libraries Defined (10)
+Name      Count  Line Numbers
+--------  -  ------------------------------------------------------------
+AS400A    2  4166, 4181
+AS400B    2  4150, 4179
+AS400C    2  4158, 4180
+BEXTRACT  1  4375
+BTRANSV   1  4376
+EXTRACT   1  4368
+MAPPINGS  1  4369
+MOTOR     1  4372
+RECON     1  4371
+TRANSV    1  4370
+
+## Variable Operations (87)
+Name                                  Count  Line Numbers
+------------------------------------  --  ------------------------------------------------------------
+BY_CHDRNUM                            64  25, 29, 34, 84, 166, 203, 236, 348, 370, 400, 409, 508, 594,...
+BY_CLAIM                              46  1644, 1695, 1703, 1717, 1725, 1731, 1759, 1797, 1858, 1864, ...
+CLASS_CHDRNUM                         31  105, 129, 153, 183, 296, 323, 335, 879, 911, 938, 972, 1115,...
+VAR_GWP                               12  130, 186, 912, 975, 1346, 1353, 1458, 2572, 2622, 3012, 3039...
+CLASS_CLAIM                            8  1653, 1746, 1777, 1884, 2385, 2408, 2513, 3425
+DROP_BATCACTYR                         5  61, 278, 846, 1106, 1309
+DROP_RC                                5  1444, 2260, 2982, 3559, 3650
+VAR_GPAY                               5  1747, 1778, 2509, 2514, 3426
+BY_YRM                                 5  2447, 2450, 2455, 2521, 2522
+VAR_GWPTOTAL                           4  106, 882, 1315, 1322
+VAR_RWP                                4  324, 336, 1146, 1158
+BY_CHDRNO                              4  3172, 3176, 3181, 3190
+VAR_GEP                                4  3340, 3371, 3464, 3530
+KEEP_CHDRNUM                           3  3150, 3220, 3506
+KEEP_DATA                              2  97, 871
+CLASS_VARIABLES                        2  97, 871
+VAR_CWP                                2  154, 939
+DROP_PROPGWP                           2  246, 1056
+VAR_RWPTOTAL                           2  297, 1116
+BY_ACCNTID                             2  319, 1141
+DROP_PROPRWP                           2  376, 1209
+KEEP_ONLY                              2  386, 661
+BY_TAKING                              2  403, 679
+KEEP_THE                               2  448, 718
+DROP_CURRFROM                          2  498, 765
+BY_LATEST_REPLACEMENT                  2  611, 618
+BY_BILLNO                              2  1375, 1386
+DROP_GWP                               2  1551, 3057
+VAR_ALL_GWP_NB                         2  1559, 1566
+VAR__NUMERIC_                          2  2004, 3525
+DROP_DATE_OF_CLOSING                   2  2461, 2527
+BY_REPLNUM                             1  519
+DROP_REPLNUM                           1  535
+DROP_CHDRSTCDC_2                       1  586
+BY_THE                                 1  879
+DROP_CCDATE                            1  1227
+DROP_OCCDATE                           1  1235
+DROP_REFNO                             1  1260
+CLASS_SACSCODE                         1  1321
+DROP_BATCTRCD                          1  1340
+DROP_SACSCODE                          1  1365
+CLASS_BILLNO                           1  1379
+VAR_BPREM                              1  1380
+DROP_BPREM                             1  1395
+DROP_GWPTOTAL                          1  1425
+DROP_CWP                               1  1514
+CLASS_ID                               1  1565
+DROP_TRANSACTION_DATE                  1  1632
+VAR_GPAYTOT                            1  1654
+KEEP_IT                                1  1782
+DROP_CLMPFX                            1  1850
+VAR_CPAY                               1  1885
+BY_RI                                  1  1898
+KEEP_CLAIM                             1  2101
+DROP_GPAY2                             1  2136
+DROP_DATREP                            1  2241
+DROP_GCOCCNO                           1  2289
+DROP_D_TEMPREG                         1  2312
+VAR_GBAL                               1  2386
+DROP_GBAL                              1  2401
+VAR_RBAL                               1  2409
+DROP_RBAL                              1  2425
+DROP_RESVDATE                          1  2440
+DROP_RLDGACCT                          1  2490
+DROP_TEMPYRM                           1  2537
+BY_TRANNO                              1  2548
+BY_BEING                               1  2549
+DROP_D_TRAN                            1  2552
+DROP_TRANNO                            1  2684
+DROP_NEW_GWP_EE                        1  2895
+VAR_GWP_NBZ_IE                         1  2929
+VAR_YRM                                1  2952
+DROP_D_EFF                             1  3072
+VAR_DAILY_RATE_P                       1  3154
+KEEP_CHDRNO                            1  3185
+VAR_GEP_NEW                            1  3275
+VAR_GEP_OLD                            1  3291
+CLASS_ACCOUNTING_PERIOD                1  3363
+VAR_PRODUCT_ALLOWANCE_PROFIT_COMMISS   1  3364
+CLASS_YRM                              1  3370
+DROP_PA_RATE                           1  3391
+VAR_GINC_A                             1  3510
+DROP_DTEATT                            1  3594
+VAR_D_FROM                             1  3613
+DROP_DESCTABL                          1  3699
+KEEP_ITEMITEM                          1  3721
+BY_FILTERING                           1  3948
